@@ -9416,43 +9416,6 @@ Returns current projection matrix.
 ") ProjectionMatrix;
 		const Graphic3d_Mat4d & ProjectionMatrix();
 
-		/****************** SetCullingDistance ******************/
-		/**** md5 signature: 2c124390ed1785355c4fc42a9d178ce1 ****/
-		%feature("compactdefaultargs") SetCullingDistance;
-		%feature("autodoc", "
-Parameters
-----------
-theCtx: CullingContext
-theDistance: float
-
-Return
--------
-None
-
-Description
------------
-Setup distance culling.
-") SetCullingDistance;
-		void SetCullingDistance(CullingContext theCtx, Standard_Real theDistance);
-
-		/****************** SetCullingSize ******************/
-		/**** md5 signature: 1674520241dff328a7784cfe9a955a47 ****/
-		%feature("compactdefaultargs") SetCullingSize;
-		%feature("autodoc", "
-Parameters
-----------
-theCtx: CullingContext
-theSize: float
-
-Return
--------
-None
-
-Description
------------
-Setup size culling.
-") SetCullingSize;
-		void SetCullingSize(CullingContext theCtx, Standard_Real theSize);
 
 		/****************** SetViewVolume ******************/
 		/**** md5 signature: d764b63bb91ca03cf3925f731886ca22 ****/
@@ -19960,41 +19923,6 @@ Set if depth values should be cleared before drawing the layer.
 ") SetClearDepth;
 		void SetClearDepth(const Standard_Boolean theValue);
 
-		/****************** SetCullingDistance ******************/
-		/**** md5 signature: 212f1b9b3fad158e803c37ed4ea70813 ****/
-		%feature("compactdefaultargs") SetCullingDistance;
-		%feature("autodoc", "
-Parameters
-----------
-theDistance: float
-
-Return
--------
-None
-
-Description
------------
-Set the distance to discard drawing objects.
-") SetCullingDistance;
-		void SetCullingDistance(Standard_Real theDistance);
-
-		/****************** SetCullingSize ******************/
-		/**** md5 signature: de1e67e83be84528f7afa7d200b49f34 ****/
-		%feature("compactdefaultargs") SetCullingSize;
-		%feature("autodoc", "
-Parameters
-----------
-theSize: float
-
-Return
--------
-None
-
-Description
------------
-Set the distance to discard drawing objects.
-") SetCullingSize;
-		void SetCullingSize(Standard_Real theSize);
 
 		/****************** SetDepthOffsetNegative ******************/
 		/**** md5 signature: 8504702a9a57f02a9fc5f9a049047757 ****/
